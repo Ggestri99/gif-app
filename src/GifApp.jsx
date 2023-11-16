@@ -15,10 +15,10 @@ export const GifApp = () => {
       <div>GifApp</div>
 
       {/*Input*/}
-      <AddCategory />
+      <AddCategory setCategories={setCategories} />
 
       {/*Listado de Gif*/}
-      <button onClick={onAddCategory}>Agregar Giff</button>
+
       <ol>
           {categories.map(category => {
             return <li key={category}>{category}</li>
